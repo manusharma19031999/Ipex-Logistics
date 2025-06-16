@@ -7,7 +7,7 @@ const generatePDF = require("./generatePDF");
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(bodyParser.json());
 
 app.post("/generate-label", async (req, res) => {
