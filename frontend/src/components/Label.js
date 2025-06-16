@@ -24,6 +24,7 @@ function Label({ formData, onEdit }) {
         setLoading(false);
       } catch (err) {
         console.error("Error generating PDF", err);
+        setLoading(false);
       }
     };
 
