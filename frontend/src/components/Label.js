@@ -10,7 +10,7 @@ function Label({ formData, onEdit }) {
     const generatePDF = async () => {
       try {
         const res = await axios.post(
-          "http://localhost:5000/generate-label",
+          "https://your-backend.onrender.com/generate-label",
           formData,
           {
             responseType: "blob",
