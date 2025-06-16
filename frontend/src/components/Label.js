@@ -48,11 +48,13 @@ function Label({ formData, onEdit }) {
       ) : (
         <>
           <iframe
-            src={pdfUrl}
-            width="100%"
-            height="500px"
-            title="PDF Preview"
-          />
+  src={pdfUrl}
+  type="application/pdf"
+  width="100%"
+  height="500px"
+  title="PDF Preview"
+/>
+
           <div style={{ marginTop: "10px" }}>
             <button onClick={downloadPDF}>Download PDF</button>
             <button onClick={onEdit} style={{ marginLeft: 8 }}>
