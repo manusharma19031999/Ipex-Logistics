@@ -25,7 +25,7 @@ app.post("/generate-label", async (req, res) => {
     });
 
     res.setHeader("Content-Type", "application/pdf");
-    res.setHeader("Content-Disposition", "attachment; filename=label.pdf");
+res.setHeader("Content-Disposition", "inline; filename=label.pdf");
     res.send(pdfBuffer);
   } catch (error) {
     console.error("PDF generation error:", error);
