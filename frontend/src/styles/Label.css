@@ -1,0 +1,22 @@
+.label-preview {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+  }
+  .label-preview pre {
+    background: #f0f0f0;
+    padding: 10px;
+    overflow: auto;
+  }
+  .label-preview button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
